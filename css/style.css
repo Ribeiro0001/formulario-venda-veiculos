@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(11, 184, 214);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.text {
+  color: white;
+  min-height: 200px;
+  background-color: #673ab7;
+  padding: 20px;
+}
+
+.sell-car {
+  width: calc(100% - 40px);
+  max-width: 1200px;
+  margin: -60px auto 0;
+  padding: 20px;
+  background-color: white;
+}
+
+.card-form {
+  border-bottom: 1px solid #dfdfdf;
+  height: 45px;
+}
+.card-form p {
+  color: #673ab7;
+  border-bottom: 2px solid rebeccapurple;
+  width: 100px;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  height: 45px;
+  line-height: 45px;
+}
+
+.info p {
+  margin-top: 25px;
+}
+
+.info {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.form-group {
+  padding: 20px;
+  margin-bottom: 22px;
+}
+
+.radio input,
+.radio label {
+  display: inline-block;
+}
+
+.form-group > input:not([type="radio"]):not([type="checkbox"]),
+.form-group textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 8px 0;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  outline: none;
+  font-family: inherit;
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-group > input:focus,
+.form-group textarea:focus {
+  border-bottom-color: #673ab7;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.group-label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.radio label {
+  margin-bottom: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.cadast {
+  display: block;
+  width: 150px;
+  height: 50px;
+  margin: 40px auto 0;
+  color: white;
+  background-color: #673ab7;
+  border: none;
+  cursor: pointer;
+}
+
+.cadast:hover {
+  background-color: #fff;
+  border: 1px solid #673ab7;
+  color: #673ab7;
+}

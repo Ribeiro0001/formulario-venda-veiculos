@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form_project</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="text"><h1>Cadastre seu veículo para a venda ser feita</h1></div>
+    <section class="sell-car">
+      <div class="card-form">
+        <p>Formulário</p>
+      </div>
+
+      <div class="info">
+        <h2>Venda seu carro fácil e rápido!</h2>
+        <p>
+          Descreva as características do seu carro e marque as opções que ele
+          possui.
+        </p>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="title">Título do anúncio:</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            placeholder="Digite o título do anúncio"
+            minlength="1"
+            maxlength="99"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="price">Preço:</label>
+          <input
+            type="text"
+            name="price"
+            id="price"
+            placeholder="Digite o preço do veículo"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="description">Descrição do carro:</label>
+          <textarea
+            name="description"
+            id="description"
+            placeholder="Descreva o estado do veículo, opcionais, histórico de manutenção..."
+            required
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="brand">Marca:</label>
+          <input
+            type="text"
+            name="brand"
+            id="brand"
+            placeholder="Digite a marca do carro"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="model">Modelo:</label>
+          <input
+            type="text"
+            name="model"
+            id="model"
+            placeholder="Digite o modelo do carro"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="km">Quilometragem:</label>
+          <input
+            type="number"
+            name="km"
+            id="km"
+            placeholder="Digite a quilometragem"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="date">Data de compra:</label>
+          <input type="date" name="date" id="date" />
+        </div>
+        <div class="form-group">
+          <p class="group-label">Tipo de câmbio:</p>
+          <div class="radio">
+            <input type="radio" name="transmission" id="automaic" />
+            <label for="automatic">Automático</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="transmission" id="manual" />
+            <label for="manual">Manual</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <p class="group-label">Opcionais:</p>
+          <div class="radio">
+            <input
+              type="checkbox"
+              name="options[]"
+              id="airbag"
+              value="airbag"
+            />
+            <label for="airbag">Airbag</label>
+          </div>
+          <div class="radio">
+            <input type="checkbox" name="options[]" id="alarm" value="alarm" />
+            <label for="alarm">Alarme</label>
+          </div>
+          <div class="radio">
+            <input
+              type="checkbox"
+              name="options[]"
+              id="air-conditioning"
+              value="air-conditioning"
+            />
+            <label for="air-conditioning">Ar Condicionado</label>
+          </div>
+          <div class="radio">
+            <input
+              type="checkbox"
+              name="options[]"
+              id="rear-view-camera"
+              value="rear-view-camera"
+            />
+            <label for="rear-view-camera">Câmera de Ré</label>
+          </div>
+          <div class="radio">
+            <input
+              type="checkbox"
+              name="options[]"
+              id="lane-assist"
+              value="lane-assist"
+            />
+            <label for="lane-assist">Assistente de Faixa</label>
+          </div>
+          <div class="radio">
+            <input
+              type="checkbox"
+              name="options[]"
+              id="leather-sea"
+              value="leather-sea"
+            />
+            <label for="leather-sea">Banco de Couro</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="car-photos">Fotos do Carro:</label>
+          <input
+            type="file"
+            name="car-photos"
+            id="car-photos"
+            accept="image/*"
+            multiple
+            required
+          />
+        </div>
+        <hr />
+
+        <button type="submit" class="cadast">CADASTRAR</button>
+      </form>
+    </section>
+  </body>
+</html>
